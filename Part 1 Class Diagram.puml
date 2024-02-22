@@ -12,10 +12,10 @@ class Employee {
 -LastName: String
 -SSNumber: String
 
-+Employee(String FirstName,String LastName, String SSNumber)
-+setFirstName(String FirstName): void
-+setLastName(String LastName): void
-+setSSNumber(String SSNumber): void
++Employee(FirstName: String, LastName: String, SSNumber: String)
++setFirstName(FirstName: String): void
++setLastName(LastName: String): void
++setSSNumber(SSNumber: String): void
 +getFirstName(): String
 +getLastName(): String
 +getSSNumber(): String
@@ -24,8 +24,8 @@ class Employee {
 class BaseEmployee{
 -BaseSalary: String
 
-+BaseEmployee(String FirstName,String LastName, String SSNumber, String BaseSalary)
-+setBaseSalary(String BaseSalary): void
++BaseEmployee(FirstName: String,LastName: String, SSNumber: String, BaseSalary: String)
++setBaseSalary(BaseSalary: String): void
 +getBaseSalary(): String
 +Print(): void
 }
@@ -34,9 +34,9 @@ class CommissionEmployee{
 -CommissionRate: String
 -GrossSales: String
 
-+CommissionEmployee(String FirstName, String LastName, String SSNumber, String CommissionRate, String GrossSales)
-+setCommissionRate(String CommissionRate): void
-+setGrossSales(String GrossSales): void
++CommissionEmployee(FirstName: String,LastName: String, SSNumber: String, CommissionRate: String, GrossSales: String)
++setCommissionRate(CommissionRate: String): void
++setGrossSales(GrossSales: String): void
 +getCommissionRate(): String
 +String getGrossSales(): String
 +Print(): void
@@ -46,9 +46,9 @@ class HourlyEmployee{
 -Wage: String
 -NumberHoursWorked: String
 
-+HourlyEmployee(String FirstName,String LastName, String SSNumber, String Wage, String NumberHoursWorked)
-+setWage(String Wage): void
-+setNumberHoursWorked(String NumberHoursWorked): void
++HourlyEmployee(FirstName: String, LastName: String, SSNumber: String, Wage: String, NumberHoursWorked: String)
++setWage(Wage: String): void
++setNumberHoursWorked(NumberHoursWorked: String): void
 +getWage(): String
 +getNumberHoursWorked(): String
 +Print(): void
@@ -57,8 +57,8 @@ class HourlyEmployee{
 class SalariedEmployee{
 -WeeklySalary: String
 
-+SalariedEmployee(String FirstName,String LastName, String SSNumber, String WeeklySalary)
-+setWeeklySalary(String WeeklySalary): void
++SalariedEmployee(FirstName: String,LastName: String, SSNumber: String, WeeklySalary: String)
++setWeeklySalary(WeeklySalary: String): void
 +getWeeklySalary(): String
 +Print(): void
 }

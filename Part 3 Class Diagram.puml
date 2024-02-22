@@ -9,9 +9,9 @@ class Course {
 -CourseTextbookA: Textbook
 -CourseTextbookB: Textbook
 
-+Course(String CourseName, Instructor CourseInstructorA, Instructor CourseInstructorB, Textbook CourseTextbookA, Textbook CourseTextbookB)
++Course(CourseName: String, CourseInstructorA: Instructor, CourseInstructorB: Instructor, CourseTextbookA: Textbook, CourseTextbookB: Textbook)
 +getCourseName(): String
-+setCourseName(String CourseName): void
++setCourseName(CourseName: String): void
 +PrintCourseDetails(): void
 }
 
@@ -20,13 +20,13 @@ class Instructor {
 -LastName: String
 -OfficeNumber: String
 
-+Instructor(String FirstName, String LastName, String OfficeNumber)
++Instructor(FirstName: String, LastName: String, OfficeNumber: String)
 +getFirstName(): String
 +getLastName(): String
 +getOfficeNumber(): String
-+setFirstName(String FirstName): void
-+setLastName(String LastName): void
-+setOfficeNumber(String OfficeNumber): void
++setFirstName(FirstName: String): void
++setLastName(LastName: String): void
++setOfficeNumber(OfficeNumber: String): void
 }
 
 class Textbook {
@@ -34,13 +34,13 @@ class Textbook {
 -Author: String
 -Publisher: String
 
-+Textbook(String Title, String AuthorName, String Publisher)
++Textbook(Title: String, AuthorName: String, Publisher: String)
 +getTitle(): String
 +getAuthorName(): String
 +getPublisher(): String
-+setTitle(String Title): void
-+setAuthorName(String AuthorName): void
-+setPublisher(String Publisher): void
++setTitle(Title: String): void
++setAuthorName(AuthorName: String): void
++setPublisher(Publisher: String): void
 }
 
 Course "1..*" o-- "2" Instructor

@@ -9,21 +9,21 @@ Folder "1" *-- "0..*" Folder
 class Folder {
 -FolderName: String
 
-+Folder(String FolderName)
++Folder(FolderName: String)
 +getFolderName(): String
-+setFolderName(String FolderName): void
-+AddNewFolder(String NewFolderName): void
-+AddNewFolder(Folder NewFolder): void
-+AddNewFile(String NewFileName): void
++setFolderName(FolderName: String): void
++AddNewFolder(NewFolderName: String): void
++AddNewFolder(NewFolder: Folder): void
++AddNewFile(NewFileName: String): void
 +Print(): void
-+Delete(Folder Selection): void
++Delete(Selection: Folder): void
 }
 
 class File{
 -FileName: String
 
-+File(String FileName)
-+setFileName(String FileName): void
++File(FileName: String)
++setFileName(FileName: String): void
 +getFileName(): String
 +PrintFileName(): void
 }

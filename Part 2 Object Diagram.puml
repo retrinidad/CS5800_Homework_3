@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>FirstShip:Ship</u>" as fs{
+ShipName = "First"
+YearBuilt = "2000"
+}
+object "<u>SecondShip:Ship</u>" as sss{
+ShipName = "Second"
+YearBuilt = "2005"
+}
+object "<u>SecondShip:CruiseShip</u>" as sscs{
+MaxNumberOfPassengers = 100
+}
+object "<u>ThirdShip:Ship</u>" as tss{
+ShipName = "Third"
+YearBuilt = "2010"
+}
+object "<u>ThirdShip:CargoShip</u>" as tscs{
+Tonnage = 50
+}
+
+sss <|-- sscs
+tss <|-- tscs
+
+@enduml

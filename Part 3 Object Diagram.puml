@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>Davarpanah:Instructor</u>" as dp{
+FirstName = "Nima"
+LastName = "Davarpanah"
+OfficeNumber = "3-2636"
+}
+
+object "<u>CleanCode:Textbook</u>" as cc{
+Title = "Clean Code"
+AuthorName = "Robert C. Martin"
+Publisher = "Prentice Hall"
+}
+
+
+object "<u>CS5800</u>" as cs5800{
+CourseName = "Advanced Software Engineering"
+}
+
+cs5800 o-- dp
+cs5800 o-- cc
+
+
+@enduml

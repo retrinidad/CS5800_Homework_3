@@ -1,0 +1,87 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>J_Jones:Employee</u>" as jje{
+FirstName = "Joe"
+LastName = "Jones"
+SSNumber = "111-11-1111"
+}
+
+object "<u>J_Jones:SalariedEmployee</u>" as jjse{
+WeeklySalary = "$2,500"
+}
+
+object "<u>S_Smith:Employee</u>" as sse{
+FirstName = "Stephanie"
+LastName = "Smith"
+SSNumber = "222-22-2222"
+}
+
+object "<u>S_Smith:HourlyEmployee</u>" as sshe{
+Wage = "$25"
+NumberHoursWorked = "32"
+}
+
+object "<u>M_Quinn:Employee</u>" as mqe{
+FirstName = "Mary"
+LastName = "Queen"
+SSNumber = "333-33-3333"
+}
+
+object "<u>M_Quinn:HourlyEmployee</u>" as mqhe{
+Wage = "$19"
+NumberHoursWorked = "47"
+}
+
+object "<u>N_Dior:Employee</u>" as nde{
+FirstName = "Nicole"
+LastName = "Dior"
+SSNumber = "444-44-4444"
+}
+
+object "<u>N_Dior:CommissionEmployee</u>" as ndce{
+CommissionRate = "%15"
+GrossSales = "$50,000"
+}
+
+object "<u>R_Chanel:Employee</u>" as rce{
+FirstName = "Renwa"
+LastName = "Chanel"
+SSNumber = "555-55-5555"
+}
+
+object "<u>R_Chanel:SalariedEmployee</u>" as rcse{
+WeeklySalary = "$1,700"
+}
+
+object "<u>M_Davenport:Employee</u>" as mde{
+FirstName = "Mike"
+LastName = "Davenport"
+SSNumber = "666-66-6666"
+}
+
+object "<u>M_Davenport:BaseEmployee</u>" as mdbe{
+BaseSalary = "$95,000"
+}
+
+object "<u>M_Vaziri:Employee</u>" as mve{
+FirstName = "Mahnaz"
+LastName = "Vaziri"
+SSNumber = "777-77-7777"
+}
+
+object "<u>M_Vaziri:CommissionEmployee</u>" as mvce{
+CommissionRate = "%22"
+GrossSales = "$40,000"
+}
+
+jje <|-- jjse
+sse <|-- sshe
+mqe <|-- mqhe
+nde <|-- ndce
+rce <|-- rcse
+mde <|-- mdbe
+mve <|-- mvce
+
+
+@enduml

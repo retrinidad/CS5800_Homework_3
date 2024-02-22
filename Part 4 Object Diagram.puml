@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "<u>php_demo1:Folder</u>" as php{
+FolderName = "php_demo1"
+}
+object "<u>SourceFiles:Folder</u>" as sf{
+FolderName = "SourceFiles"
+}
+object "<u>phalcon:Folder</u>" as phal{
+FolderName = "phalcon"
+}
+
+object "<u>cache:Folder</u>" as cache{
+FolderName = "cache"
+}
+object "<u>publicFolder:Folder</u>" as pubf{
+FolderName = "publicFolder"
+}
+
+object "<u>IncludePath:Folder</u>" as ip{
+FolderName = "IncludePath"
+}
+object "<u>RemoteFiles:Folder</u>" as rf{
+FolderName = "RemoteFiles"
+}
+object "<u>htaccess:File</u>" as hta{
+FileName = "htaccess"
+}
+object "<u>htrouter.php:File</u>" as htr{
+FileName = "htrouter.php"
+ }
+object "<u>index.html:File</u>" as idx{
+FileName = "index.html"
+ }
+
+php *-- sf
+php *-- ip
+php *-- rf
+sf *-- phal
+sf *-- cache
+sf *-- pubf
+pubf *-- hta
+pubf *-- htr
+pubf *-- idx
+
+@enduml

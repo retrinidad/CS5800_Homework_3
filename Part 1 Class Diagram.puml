@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+Employee <|-- BaseEmployee
+Employee <|-- CommissionEmployee
+Employee <|-- HourlyEmployee
+Employee <|-- SalariedEmployee
+
+class Employee {
+-FirstName: String
+-LastName: String
+-SSNumber: String
+
++Employee(String FirstName,String LastName, String SSNumber)
++setFirstName(String FirstName): void
++setLastName(String LastName): void
++setSSNumber(String SSNumber): void
++getFirstName(): String
++getLastName(): String
++getSSNumber(): String
+}
+
+class BaseEmployee{
+-BaseSalary: String
+
++BaseEmployee(String FirstName,String LastName, String SSNumber, String BaseSalary)
++setBaseSalary(String BaseSalary): void
++getBaseSalary(): String
++Print(): void
+}
+
+class CommissionEmployee{
+-CommissionRate: String
+-GrossSales: String
+
++CommissionEmployee(String FirstName, String LastName, String SSNumber, String CommissionRate, String GrossSales)
++setCommissionRate(String CommissionRate): void
++setGrossSales(String GrossSales): void
++getCommissionRate(): String
++String getGrossSales(): String
++Print(): void
+}
+
+class HourlyEmployee{
+-Wage: String
+-NumberHoursWorked: String
+
++HourlyEmployee(String FirstName,String LastName, String SSNumber, String Wage, String NumberHoursWorked)
++setWage(String Wage): void
++setNumberHoursWorked(String NumberHoursWorked): void
++getWage(): String
++getNumberHoursWorked(): String
++Print(): void
+}
+
+class SalariedEmployee{
+-WeeklySalary: String
+
++SalariedEmployee(String FirstName,String LastName, String SSNumber, String WeeklySalary)
++setWeeklySalary(String WeeklySalary): void
++getWeeklySalary(): String
++Print(): void
+}
+
+@enduml
